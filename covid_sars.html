@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Coronavirus COVID-19 Glboal Cases | Anas Gamrani</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/adminlte.min.css">
+  <!-- overlayScrollbars -->
+  <link rel="stylesheet" href="dist/plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+  <!-- Google Font: Source Sans Pro -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+  <link rel="stylesheet" href="dist/css/ot.css" type="text/css"/>
+</head>
+
+<body class="layout-top-nav">
+<div class="wrapper">
+
+  <!-- Navbar -->
+  <nav class="main-header navbar navbar-expand-md navbar-dark bg-black border-bottom-0">
+    <div class="container-fluid">
+      <div class="navbar-brand">
+       
+        </a>
+        <span
+          class="brand-text text-lg text-white-50 d-none d-md-inline-block"><span class="text-white">Coronavirus COVID-19 Global Cases</span> Developed By Anas E.</span>
+      </div>
+    </div>
+  </nav>
+  <!-- /.navbar -->
+
+  <!-- Content Wrapper. Contains page content -->
+  <section class="content-wrapper bg-black">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <div class="tab-selector">
+              <span><a href="index.html">COVID-19 status</a></span>
+              <span class="active"><a href="covid_sars.html">COVID-19 vs. SARS</a></span>
+            </div>
+          </div><!-- /.col -->
+        </div><!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content-header -->
+
+    <!-- Main content -->
+    <section class="content">
+      <div class="container-fluid">
+
+        <div class="row">
+          <section class="col-md-2 connectedSortable">
+            <!-- Confirmed Cases -->
+            <div class="card bg-dark ot-card-lg sars-selector">
+              <div class="card-header">
+                <div class="card-title text-bold">
+                  <p class="m-0">COVID-19 vs. SARS-02</p>by Country / Region
+                </div>
+              </div>
+              <div class="card-body country-panel">
+                <p class="active" data-country="Global">Global</p>
+                <p data-country="China">China</p>
+                <p data-country="Singapore">Singapore</p>
+                <p data-country="South Korea">South Korea</p>
+                <p data-country="Italy">Italy</p>
+                <p data-country="Hong Kong">Hong Kong</p>
+              </div>
+
+            </div>
+          </section>
+          <section class="col-md-5 connectedSortable">
+            <!-- Line chart -->
+            <div class="card bg-dark ot-card-chart">
+				<div class="card-header">
+                <h3 class="card-title"><p id="report1-title" class="m-0">Spread COVID-19 China compared to SARS Global for</p> Confirmed cased</h3>
+              </div>
+			
+              <div id="report-1" class="card-body">
+                <div id='container1' class="ot-chart-container">
+                </div>
+              </div>
+              <!-- /.card-body-->
+            </div>
+            <!-- /.card -->
+            <div class="card bg-dark ot-card-chart">
+				<div class="card-header">
+                <h3 class="card-title"><p id="report2-title" class="m-0">Spread COVID-19 China compared to SARS Global for</p> Death Rate</h3>
+              </div>
+				
+              <div class="card-body">
+                <div id='container2' class="ot-chart-container">
+                </div>
+              </div>
+              <!-- /.card-body-->
+            </div>
+          </section>
+          <section class="col-md-5 connectedSortable">
+            <!-- Line chart -->
+            <div class="card bg-dark ot-card-chart">
+				<div class="card-header">
+					<h3 class="card-title"><p id="report3-title" class="m-0">Spread COVID-19 China compared to SARS Global for</p> Confirmed (Logarithmic)</h3>
+				  </div>
+              <div class="card-body">
+                <div id='container3' class="ot-chart-container">
+                </div>
+              </div>
+              <!-- /.card-body-->
+            </div>
+            <!-- /.card -->
+            <!-- Line chart -->
+            <div class="card bg-dark ot-card-chart">
+			
+				<div class="card-header">
+                <h3 class="card-title"><p id="report4-title" class="m-0">Spread COVID-19 China compared to SARS Global for</p> Recovery Rate</h3>
+              </div>
+			
+              <div class="card-body">
+                <div id='container4' class="ot-chart-container">
+                </div>
+              </div>
+              <!-- /.card-body-->
+            </div>
+            <!-- /.card -->
+          </section>
+        </div>
+      </div>
+      <!-- ./container-fluid -->
+    </section>
+    <!-- Main Footer -->
+    <footer class="main-footer bg-black border-top-0">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-8">
+            <div class="last-update-text text-white-50">
+              <p>Last updated 13 March, 2020 11:52 PM EST</p>
+            </div>
+          </div>
+           <div class="col-md-4 footer-links">
+            <span class="ot-social-links">
+              <a
+                href="https://facebook.com/Varulv1997"><img
+                style=""
+                title="Share on Twitter" src="dist/img/Twitter.png"></a>
+              <a href="https://www.twitter.com/Varulv1997"><img
+                style=""
+                title="Share on Facebook" src="dist/img/Facebook.png"></a>
+              <a
+                href="https://www.linkedin.com/in/anasgamrani/"><img
+                style=""
+                title="Share on LinkedIn" src="dist/img/LinkedIn.png"></a>
+            </span>
+            <span class="source-links text-white-50" onclick="openSources();">
+              Sources
+            </span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <div class="ot-copy-right">
+              <p>Copyright ©2020 Anas Gamrani | Svart Mane Produksjoner. All rights reserved.
+
+              <p>
+              <p>This is a Coronavirus COVID-19 Dashboard, including all
+                contents, analysis, mapping and data ("Dashboard"), is an on-line
+                information tool made available as an information resource for
+                public access, including educational institutions, governments and
+                businesses, to provide a consolidated source of information on
+                COVID-19. The Dashboard reflects publicly available data from
+                numerous sources that provide varied, and sometimes conflicting
+                information. Use of information on the Dashboard does not
+                represent or imply any endorsement by the data source, and may be
+                subject to use limitations from the applicable data source. Links
+                to non-OpenText sites are subject to the terms and conditions of
+                those sites. OpenText disclaims any and all representations and
+                warranties concerning the Dashboard, including any implied
+                warranties of merchantability, fitness for any purpose, or
+                accuracy, or those arising by law or statute. Any reliance on the
+                Dashboard for medical advice, or any use of the Dashboard in
+                commerce are strictly prohibited. Developed by Anas Gamrani.</p>
+              <input id="current_country" name="current_country" type="hidden" value="Global">
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- /.container-fluid -->
+  </section>
+  <!-- /.content -->
+  <!-- /.content-wrapper -->
+
+  <!-- Modal -->
+  <div id="sourcesModal" class="ot-modal">
+    <span class="ot-close cursor" onclick="closeSources()">×</span>
+    <div class="ot-modal-content">
+      <table style="width:100%; border-collapse: collapse;">
+        <tbody><tr>
+          <th colspan="2" class="dataSourcesHeader">Data Sources</th>
+        </tr>
+        <tr>
+          <th colspan="2" class="thirdColumnHeader">Data from Daily Case Reports</th>
+        </tr>
+        <tr>
+          <td><span class="sourceEntry">Johns Hopkins CSSE Github</span></td><td><span class="sourceURL">https://github.com/CSSEGISandData/COVID-19</span></td>
+        </tr>
+        <tr>
+          <td><span class="sourceEntry">Open Data of Hong Kong</span></td><td><span class="sourceURL">https://data.gov.hk/en-data/dataset/hk-dh-chpsebcddr-novel-infectious-agent</span></td>
+        </tr>
+        <tr>
+          <td><span class="sourceEntry">WHO SARS historical data</span></td><td><span class="sourceURL">https://www.who.int/csr/sars/country/en/</span></td>
+        </tr>
+        <tr>
+          <td><span class="sourceEntry">&nbsp;</span></td><td><span class="sourceURL">https://www.who.int/csr/don/archive/disease/coronavirus_infections/en/</span></td>
+        </tr>
+        <tr>
+          <th colspan="2" class="thirdColumnHeader">Global Websites</th>
+        </tr>
+        <tr>
+          <td><span class="sourceEntry">BBC</span></td><td><span class="sourceURL">https://www.bbc.com/news/health</span></td>
+        </tr>
+        <tr>
+          <td><span class="sourceEntry">Johns Hopkins University</span></td><td><span class="sourceURL">https://systems.jhu.edu/research/public-health/ncov/</span></td>
+        </tr>
+        <tr>
+          <td><span class="sourceEntry">AP News</span></td><td><span class="sourceURL">https://apnews.com/apf-Health</span></td>
+        </tr>
+        <tr>
+          <td><span class="sourceEntry">Reuters</span></td><td><span class="sourceURL">https://www.reuters.com/news/health</span></td>
+        </tr>
+        <tr>
+          <td><span class="sourceEntry">ECDC</span></td><td><span class="sourceURL">https://www.ecdc.europa.eu/en/novel-coronavirus-china</span></td>
+        </tr>
+        <tr>
+          <td><span class="sourceEntry">WHO</span></td><td><span class="sourceURL">https://www.who.int/emergencies/diseases/novel-coronavirus-2019</span></td>
+        </tr>
+        <tr>
+          <td><span class="sourceEntry">CDC</span></td><td><span class="sourceURL">https://www.cdc.gov/coronavirus/2019-ncov/index.html</span></td>
+        </tr>
+        <tr>
+          <th colspan="2" class="thirdColumnHeader">Regional Websites</th>
+        </tr>
+        <tr>
+          <td><span class="sourceEntry">MOH</span></td><td><span class="sourceURL">https://www.moh.gov.sg/covid-19/past-updates</span></td>
+        </tr>
+        <tr>
+          <td><span class="sourceEntry">Channel News Asia</span></td><td><span class="sourceURL">https://www.channelnewsasia.com/news/topics/wuhan-virus</span></td>
+        </tr>
+        <tr>
+          <td><span class="sourceEntry">The Local</span></td><td><span class="sourceURL">https://www.thelocal.it/tag/health</span></td>
+        </tr>
+        <tr>
+          <td><span class="sourceEntry">ANSA</span></td><td><span class="sourceURL">http://www.ansa.it/english/news/news.shtml</span></td>
+        </tr>
+        <tr>
+          <td><span class="sourceEntry">South China Morning Post</span></td><td><span class="sourceURL">https://www.scmp.com/topics/coronavirus-outbreak-all-stories</span></td>
+        </tr>
+
+        <tr>
+          <td><span class="sourceEntry">Yonhap News Agency</span></td><td><span class="sourceURL">https://en.yna.co.kr/science/medicine</span></td>
+        </tr>
+        <tr>
+          <td><span class="sourceEntry">Korea Herald</span></td><td><span class="sourceURL">http://www.koreaherald.com/list.php?ct=020309000000</span></td>
+        </tr>
+        <tr>
+          <td><span class="sourceEntry">KCDC</span></td><td><span class="sourceURL">https://www.cdc.go.kr/board/board.es?mid=a30402000000&amp;bid=0030</span></td>
+        </tr>
+        <tr>
+          <th colspan="2" class="thirdColumnHeader">Global Twitter Accounts</th>
+        </tr>
+        <tr>
+          <td><span class="sourceEntry">@WHO</span></td><td><span class="sourceURL">https://twitter.com/WHO</span></td>
+        </tr>
+        <tr>
+          <td><span class="sourceEntry">@CDCgov</span></td><td><span class="sourceURL">https://twitter.com/CDCgov</span></td>
+        </tr>
+        <tr>
+          <td><span class="sourceEntry">@ECDC_EU</span></td><td><span class="sourceURL">https://twitter.com/ECDC_EU</span></td>
+        </tr>
+        <tr>
+          <td><span class="sourceEntry">@ECDC_Outbreaks</span></td><td><span class="sourceURL">https://twitter.com/ECDC_Outbreaks</span></td>
+        </tr>
+        <tr>
+          <th colspan="2" class="thirdColumnHeader">Regional Twitter Accounts</th>
+        </tr>
+        <tr>
+          <td><span class="sourceEntry">@TheLocalItaly</span></td><td><span class="sourceURL">https://twitter.com/TheLocalItaly</span></td>
+        </tr>
+        <tr>
+          <td><span class="sourceEntry">@CGTNOfficial</span></td><td><span class="sourceURL">https://twitter.com/CGTNOfficial</span></td>
+        </tr>
+        <tr>
+          <td><span class="sourceEntry">@SCMPNews</span></td><td><span class="sourceURL">https://twitter.com/SCMPNews</span></td>
+        </tr>
+        <tr>
+          <td><span class="sourceEntry">@rogerhamilton</span></td><td><span class="sourceURL">https://twitter.com/rogerhamilton</span></td>
+        </tr>
+        <tr>
+          <td><span class="sourceEntry">@ChannelNewsAsia</span></td><td><span class="sourceURL">https://twitter.com/ChannelNewsAsia</span></td>
+        </tr>
+        <tr>
+          <td><span class="sourceEntry">@sporeMOH</span></td><td><span class="sourceURL">https://twitter.com/sporeMOH</span></td>
+        </tr>
+        <tr>
+          <td><span class="sourceEntry">@YonhapNews</span></td><td><span class="sourceURL">https://twitter.com/YonhapNews</span></td>
+        </tr>
+        <tr>
+          <td style="padding-bottom:10px;"><span class="sourceEntry">@TheKoreaHerald</span></td><td style="padding-bottom:10px;"><span class="sourceURL">https://twitter.com/TheKoreaHerald</span></td>
+        </tr>
+        </tbody></table>
+      <script>
+        function openInNewTab(url) { var win = window.open(url, '_blank'); win.focus(); }
+        zzz = document.getElementsByClassName("sourceURL");
+        for (var i=0; i < zzz.length; i++) { zzz[i].addEventListener("click", function() { openInNewTab(this.innerHTML);} ); }
+      </script>
+    </div>
+  </div>
+  <!-- /.Modal -->
+</div>
+<!-- ./wrapper -->
+
+<!-- REQUIRED SCRIPTS -->
+
+<!-- jQuery -->
+<script src="dist/plugins/jquery/jquery.min.js"></script>
+
+<!-- Bootstrap 4 -->
+<script src="dist/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<!-- JQVMap -->
+
+<!-- <script src="plugins/jqvmap/jquery.vmap.min.js"></script>
+<script src="plugins/jqvmap/maps/jquery.vmap.usa.js"></script> -->
+
+<!-- overlayScrollbars -->
+
+<script src="dist/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+<!-- AdminLTE App -->
+<script src="dist/js/adminlte.js"></script>
+
+
+<!-- Page script -->
+<script>
+
+  $(".table-responsive").overlayScrollbars({});
+  function openSources() {
+    document.getElementById("sourcesModal").style.display = "block";
+  }
+
+  function closeSources() {
+    document.getElementById("sourcesModal").style.display = "none";
+  }
+</script>
+
+<script type='text/javascript' language='JavaScript' src='http://58.153.97.117:8700/iportal/jsapi'></script>
+
+<script type='text/javascript'>
+  var country_region_val = "Global";
+  actuate.load('viewer');
+  var reqOps = new actuate.RequestOptions();
+  reqOps.setRepositoryType('Enterprise');
+  reqOps.setVolume('Default Volume');
+  reqOps.setCustomParameters({});
+  actuate.initialize('http://58.153.97.117:8700/iportal/', reqOps == undefined ? null : reqOps, 'Administrator','', myInit);
+
+  function myInit() {
+    viewer1 = new actuate.Viewer('container1');
+    w = jQuery("#report-1").width();
+    h = jQuery("#report-1").height();
+    viewer1.setSize(w,h);
+
+    viewer1.setReportDesign('/Applications/Jonny_COR21vsSARS/Report Designs/1_Covid vs SARS_Confirmed2.rptdesign');
+    var parameterValueMap = {p_COVIDCountry:country_region_val,p_SARSCountry2:country_region_val}
+    var parameterValues = [];
+    for (
+      var key in parameterValueMap) {
+      var param = new actuate.viewer.impl.ParameterValue();
+      param.setName(key);
+      if (parameterValueMap[key] != null) {
+        param.setValue(parameterValueMap[key]);
+      } else {
+        param.setValueIsNull(true);
+      }
+      parameterValues.push(param);
+    }
+    viewer1.setParameterValues(parameterValues);
+    var options = new actuate.viewer.UIOptions();
+    options.enableToolBar(false);
+    viewer1.setUIOptions(options);
+    viewer1.submit();
+
+    viewer2 = new actuate.Viewer('container2');
+    viewer2.setSize(w, h);
+    viewer2.setReportDesign('/Applications/Jonny_COR21vsSARS/Report Designs/2_Covid vs SARS_ConfirmedLog2.rptdesign');
+    viewer2.setParameterValues(parameterValues);
+    var options2 = new actuate.viewer.UIOptions();
+    options2.enableToolBar(false);
+    viewer2.setUIOptions(options2);
+    viewer2.submit();
+
+
+    viewer3 = new actuate.Viewer('container3');
+    viewer3.setSize(w, h);
+    viewer3.setReportDesign('/Applications/Jonny_COR21vsSARS/Report Designs/3_Covid vs SARS_DeathRate2.rptdesign');
+    viewer3.setParameterValues(parameterValues);
+    var options3 = new actuate.viewer.UIOptions();
+    options3.enableToolBar(false);
+    viewer3.setUIOptions(options2);
+    viewer3.submit();
+
+    viewer4 = new actuate.Viewer('container4');
+    viewer4.setSize(w, h);
+    viewer4.setReportDesign('/Applications/Jonny_COR21vsSARS/Report Designs/4_Covid vs SARS_RecoveryRate2.rptdesign');
+    viewer4.setParameterValues(parameterValues);
+    var options4 = new actuate.viewer.UIOptions();
+    options4.enableToolBar(false);
+    viewer4.setUIOptions(options4);
+    viewer4.submit();
+  }
+
+  function updateParam(param){
+    country_region_val = param;
+    myInit();
+  }
+  
+  
+  function updateTitle(country){
+  
+  if(country = 'Global')
+	{
+		jQuery("#report1-title").html("Spread COVID-19 " + country + " compared to SARS Global for");
+		jQuery("#report2-title").html("Spread COVID-19 " + country + " compared to SARS Global for");
+		jQuery("#report3-title").html("Spread COVID-19 " + country + " compared to SARS Global for");
+		jQuery("#report4-title").html("Spread COVID-19 " + country + " compared to SARS Global for");
+		
+	}else{
+		jQuery("#report1-title").html("Spread COVID-19 " + country + " compared to SARS (Global & "  + country + ") for");
+		jQuery("#report2-title").html("Spread COVID-19 " + country + " compared to SARS (Global & "  + country + ") for");
+		jQuery("#report3-title").html("Spread COVID-19 " + country + " compared to SARS (Global & "  + country + ") for");
+		jQuery("#report4-title").html("Spread COVID-19 " + country + " compared to SARS (Global & "  + country + ") for");
+	}
+  
+  }
+  
+
+  jQuery(window).resize(function () {
+  
+    myInit();
+	
+  });
+
+  jQuery(function(){
+  
+	
+    jQuery("p[data-country]").on('click',function(event){
+      event.preventDefault();
+      var $this = $(this);
+      var country = $this.data('country');
+      jQuery("p.active").removeClass("active");
+      $this.addClass("active");
+	  
+	  
+	  updateTitle(country);
+      updateParam(country);
+    })
+  });
+
+</script>
+</body>
+
+</html>
